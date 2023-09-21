@@ -2,9 +2,16 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Unbenanntes Dokument</title>
+<title>IT2</title>
 </head>
+	
+	Moin
 
+	<?php
+		echo time()
+	?>
+
+	
 <body>
 </body>
 </html>
