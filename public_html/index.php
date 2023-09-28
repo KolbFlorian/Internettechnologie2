@@ -6,9 +6,7 @@
 </head>
 
 <body>
-	<?php
-	time echo()
-	?>
+	
 	<link href="F Kolb/index.php">
 	<link href="S Bosse/index.php">
 	<link href="T Weiß/index.php">
