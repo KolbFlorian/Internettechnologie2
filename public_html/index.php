@@ -2,10 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Unbenanntes Dokument</title>
+<title>Bitches </title>
 </head>
 
 <body>
+	<?php
+	time echo()
+	?>
 	<link href="F Kolb/index.php">
 	<link href="S Bosse/index.php">
 	<link href="T Weiß/index.php">
