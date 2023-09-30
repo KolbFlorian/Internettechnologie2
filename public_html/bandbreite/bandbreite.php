@@ -18,7 +18,7 @@
 		echo(sqrt(($koerpergewicht)/($koerpergroesse)));
 	
 
-
+echo "Dein BMI liegt bei " .date(w) ."."; 
 	?>
 </body>
 </html>

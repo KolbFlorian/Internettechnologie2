@@ -18,7 +18,7 @@
 		echo(sqrt(($koerpergewicht)/($koerpergroesse)));
 	
 
-	
+
 	?>
 </body>
 </html>
