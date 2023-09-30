@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Unbenanntes Dokument</title>
+<title>BMI-Aufgabe</title>
 </head>
 
 <body>
