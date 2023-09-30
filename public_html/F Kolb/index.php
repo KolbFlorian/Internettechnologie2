@@ -5,6 +5,12 @@
 <title>Timon Kek</title>
 </head>
 
-<body> <hre
+<body>
+	
+	<?p
+	
+	$hoehe = 15;
+	$fallbeschleunigung = 9.81;
+	$zeit = 
 </body>
 </html>
