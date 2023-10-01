@@ -6,19 +6,18 @@
 </head>
 <body>
 	<h1>Bandbreitenberechnung</h1>
-<? 
+<?php
 	
-	// Programmcode für die Berechnung der Zeit
-		/*
-		Mehrzeiliger Programm-
-		code
-		*/
-		$koerpergewicht=65;
-		$koerpergroesse=175;
-		echo(sqrt(($koerpergewicht)/($koerpergroesse)));
 	
+		$datengroesse=50;
+		$downloadgeschwindigkeit=16;
+		
 
-echo "Dein BMI liegt bei " .date(w) ."."; 
+	echo "<br>";
+echo "Die Übertragungszeit von " . $datengroesse . " GB mit einer Downloadgeschwindigkeit von " . $downloadgeschwindigkeit . " Mbit/s liegt bei " . ($datengroesse*1024*8/$downloadgeschwindigkeit/60) . " Minuten."; 
+	
+	echo "<br>";
+	echo "Das sind umgerechnet " . (($datengroesse*1024*8/$downloadgeschwindigkeit/60)/(60)) . " Stunden";
 	?>
-</body>
+</body> 
 </html>

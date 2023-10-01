@@ -6,18 +6,13 @@
 </head>
 	<body>
 <h1>BMI-Berechnung</h1>
-<? 
-	
-	// Programmcode für die Berechnung der Zeit
-		/*
-		Mehrzeiliger Programm-
-		code
-		*/
+<?php 
+		
 		$koerpergewicht=65;
 		$koerpergroesse=175;
-		echo(sqrt(($koerpergewicht)/($koerpergroesse)));
+		$x=($koerpergewicht/$koerpergroesse);
 	
-
+echo "Dein BMI liegt bei " . (($koerpergewicht/$koerpergroesse/$koerpergroesse)*10000) ;
 
 	?>
 </body>
