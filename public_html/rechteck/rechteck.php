@@ -10,9 +10,12 @@
 		Mehrzeiliger Programm-
 		code
 		*/
-		$seiteA=10000;
-		$seiteB=10000;
-		echo($seiteA*$seiteB);
+		$seiteA=42 ;
+		$seiteB=10 ;
+		$rechteck=$seiteA*$seiteB;
+	
+	echo("Das Rechteck ist $rechteck Quadratmeter groß");
+	
 
 	
 	?>
