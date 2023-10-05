@@ -2,15 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Timon Kek</title>
+<title>Florians erstes Programm</title>
 </head>
 
 <body>
-	
-	<?p
-	
-	$hoehe = 15;
-	$fallbeschleunigung = 9.81;
-	$zeit = 
+	<h1>IT2 - 05. Oktober 2023</h1>
+	<form action="adresse.php" method="post">
+		<p><input name="vor">Vorname</p>
+		<p><input name="nach">Nachname</p>
+		<p><input type="submit"></p>
+	</form>
+	<?php
+		$a=435;
+		echo intval($a)."<br>";
+			//intval ändert Variable in integer Wert um (ganzzahlig)
+		$b="22.6";
+		echo intval($b)."<br>";
+		echo doubleval($b)."<br>";		
+			//doubleval Gleitkommazahl
+		
+	?>
 </body>
 </html>
