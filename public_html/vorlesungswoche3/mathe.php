@@ -10,19 +10,7 @@
 		<p><input name="zahl2">Zweite Zahl</p>
 		<p><input type="submit"></p>
 	</form>
-	
-	<?php
-	$zahl1="2";
-	$zahl2="2";
-	
-	
-	echo intval($zahl1)."<br>";
-	echo intval($zahl2)."<br>";
-	
-	
-	$summe=$_POST["zahl1"]+$_POST["zahl2"];
-	echo intval($summe)."<br>";
-	?>
+
 <body>
 </body>
 </html>

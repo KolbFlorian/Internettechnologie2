@@ -2,28 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Unbenanntes Dokument</title>
+<title>Rechteck Ergebnis</title>
+
+<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
+
 </head>
 	
 
 <body>
-	<h1>Dein Ergebnis!</h1>
+	<h1>So groß ist Dein Rechteck!</h1>
 	
 	<?php
 	
 	// Zahlen aus Mathe übernehmen
-	$zahl1=$_POST["zahl1"];
-	$zahl2=$_POST["zahl2"];
+	$seiteA=$_POST["seiteA"];
+	$seiteB=$_POST["seiteB"];
 		
 	// Zeichenkette in Zahlen umwandeln
-	$zahl1=intval($zahl1);
-	$zahl1=intval($zahl1);
+	$seiteA=intval($seiteA);
+	$seiteB=intval($seiteB);
 	
 	// Rechnung durchführen
-	$ergebnis=$zahl1+$zahl2;
+	$rechteckergebnis=$seiteA*$seiteB;
 	
 	// Ergebnis ausgeben
-	echo  " $zahl1 + $zahl2 = ".$ergebnis;
+	echo  " $seiteA * $seiteB = ".$rechteckergebnis."qm";
 	
 	?>
 

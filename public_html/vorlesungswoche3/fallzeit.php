@@ -8,17 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
 	
 <body>
-	<?php
 	
-		$hoehe=10000;
-	
-	echo "Der Gegenstand ist also in" ;
-		
-		echo sqrt((2*$hoehe)/(9.81));
-		 
-	
-	 echo " Sekunden unten";
-	
-	?>
+	<h1>Gib hier die Daten zur Berechnung der Fallzeit ein!</h1>
+	<form action="fallzeitergebnis.php" method="post">
+		<p><input name="hoehe">Höhe</p>
+		<p><input name="himmelskoerper">Himmelskörper auf dem der Gegenstand fallen gelassen wird</p>
+		<p><input type="submit"></p>
+	</form>
 </body>
 </html>
