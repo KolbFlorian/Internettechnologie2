@@ -22,11 +22,21 @@
 	$seiteA=intval($seiteA);
 	$seiteB=intval($seiteB);
 	
-	// Rechnung durchführen
-	$rechteckergebnis=$seiteA*$seiteB;
+	if($seiteA=0)
+	{
+		echo "Seite B darf nicht null sein!";
+	}
 	
-	// Ergebnis ausgeben
-	echo  " $seiteA * $seiteB = ".$rechteckergebnis."qm";
+	elseif ($seiteB=0)
+	{
+		echo "Seite B darf nicht null sein!";
+		
+	}
+	else 
+	{
+		$rechteckergebnis=$seiteA*$seiteB;
+		echo  " $seiteA * $seiteB = ".$rechteckergebnis."qm";
+	}
 	
 	?>
 
