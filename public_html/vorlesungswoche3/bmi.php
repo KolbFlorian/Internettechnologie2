@@ -9,14 +9,13 @@
 </head>
 	<body>
 <h1>BMI-Berechnung</h1>
-<?php 
-		
-		$koerpergewicht=65;
-		$koerpergroesse=175;
-		$x=($koerpergewicht/$koerpergroesse);
-	
-echo "Dein BMI liegt bei " . (($koerpergewicht/$koerpergroesse/$koerpergroesse)*10000) ;
 
-	?>
+		<form action="bmiergebnis.php" method="post">
+		<p><input name="koerpergewicht">Körpergewicht in kg</p>
+		<p><input name="koerpergroesse">Körpergröße in cm</p>
+		<p><input type="submit"></p> 
+		</form>
+	
+
 </body>
 </html>

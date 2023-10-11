@@ -8,19 +8,13 @@
 
 </head>
 <body>
-	<h1>Bandbreitenberechnung</h1>
-<?php
+	<h1>Berechne deine Downloadgeschwindigkeit</h1>
 	
-	
-		$datengroesse=50;
-		$downloadgeschwindigkeit=16;
-		
+		<form action="bandbreitenergebnis.php" method="post">
+		<p><input name="datengroesse">Datengröße in GB</p>
+		<p><input name="downloadgeschwindigkeit">Downloadgeschwindigkeit in Mbits/s</p>
+		<p><input type="submit"></p> 
+		</form>
 
-	echo "<br>";
-echo "Die Übertragungszeit von " . $datengroesse . " GB mit einer Downloadgeschwindigkeit von " . $downloadgeschwindigkeit . " Mbit/s liegt bei " . ($datengroesse*1024*8/$downloadgeschwindigkeit/60) . " Minuten."; 
-	
-	echo "<br>";
-	echo "Das sind umgerechnet " . (($datengroesse*1024*8/$downloadgeschwindigkeit/60)/(60)) . " Stunden";
-	?>
 </body> 
 </html>
