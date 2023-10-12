@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Rechteck Ergebnis</title>
 
-<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 	
@@ -22,21 +22,18 @@
 	$seiteA=intval($seiteA);
 	$seiteB=intval($seiteB);
 	
-	if($seiteA=0)
-	{
-		echo "Seite B darf nicht null sein!";
-	}
-	
-	elseif ($seiteB=0)
-	{
-		echo "Seite B darf nicht null sein!";
-		
-	}
-	else 
-	{
+	if ($seiteA >= 1 && $seiteB >= 1) 
+		{ 
 		$rechteckergebnis=$seiteA*$seiteB;
 		echo  " $seiteA * $seiteB = ".$rechteckergebnis."qm";
-	}
+		}
+	else
+		{
+		echo " Die Seiten müssen mindestens 1 Lang sein";
+		}
+	
+	
+
 	
 	?>
 
