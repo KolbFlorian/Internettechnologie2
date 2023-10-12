@@ -17,6 +17,7 @@
 	// Zahlen aus Mathe übernehmen
 	$hoehe=$_POST["hoehe"];
 	$himmelskoerper=$_POST["himmelskoerper"];
+	
 		
 	// Zeichenkette in Zahlen umwandeln
 	$hoehe=intval($hoehe);
@@ -51,7 +52,7 @@
 		default : "Wäre cool wenn Du einer von vier Planeten nimmst";break;
 	}
 	
-	*/
+	
 	
 	$himmelskoerper=array("erde","mond","mars","jupiter");
 		
@@ -76,7 +77,55 @@
 			$himmelskoerper=24.79;
 		}
 	
+	
+	PROBLEM BEI MIR: VARIABLE HAT SICH SELBST ÜBERSCHRIEBEN. LÖSUNG: EINE VARIABLE MEHR DEKLARIEREN*/
+	
+	
+	
+	
+	/*
+	Musterlösung Vorlesung
+	
+	<?php
+		$hoehe=doubleval($_POST["hoehe"]);
+		$ort= $_POST["ort"];
+		$minHoehe=15;
 		
+		/*
+		if($himmelskoerper=="Erde")
+			{
+				 $fallbeschleunigung = 9.81;
+			} 
+			else if ($ort=="Mond")
+				{
+				 	$fallbeschleunigung = 1.62;
+				}
+					else if ($ort=="Mars")
+					{
+						$fallbeschleunigung = 3.69;
+					}
+						else if ($ort=="Jupiter")
+						{
+							$fallbeschleunigung = 24.79;
+						}
+		
+		
+		if($hoehe>$minHoehe)
+		{
+			$zeit= (sqrt((2*$hoehe)/($fallbeschleunigung))); 
+			$ergebnis = "Die Fallzeit aus einer Höhe von $hoehe m auf dem $ort beträgt $zeit s.";
+			
+		} else
+		{
+			$ergebnis ="Die Berechnung konnte nicht durchgeführt werden. Die Höhe muss min.".$minHoehe." m betragen.";
+		}
+		
+			
+		
+	?>
+	
+	*/
+	
 		if($hoehe>15)
 		{
 		$fallzeitergebnis=sqrt((2*$hoehe)/($himmelskoerper));

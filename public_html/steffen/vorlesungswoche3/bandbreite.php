@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Bandbreite-Aufgabe</title>
 
- <link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
+ <link rel="stylesheet" type="text/css" href="../../S Bosse/stylesheet/style.css">
 
 </head>
 <body>
