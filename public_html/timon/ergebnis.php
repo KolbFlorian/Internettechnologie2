@@ -12,11 +12,11 @@
 	<!--
 	
 	//Meine Lösung
-	$summe=$_POST["zahl1"]+$_POST["zahl2"];
+	$summe=$_POST["zeilenzaehler1"]+$_POST["zeilenzaehler2"];
 	
-	echo "".$_POST["zahl1"]."+".$_POST["zahl2"];
+	echo "".$_POST["zeilenzaehler1"]."+".$_POST["zeilenzaehler2"];
 
-	$_POST["zahl1"]+$_POST["zahl2"];
+	$_POST["zeilenzaehler1"]+$_POST["zeilenzaehler2"];
 	
 	echo "=".$_POST[$summe];
 	
@@ -25,19 +25,19 @@
 	<?php
 	//Lösung aus der Vorlesung:
 	
-	// Zahlen aus Mathe übernehmen
-	$zahl1=$_POST["zahl1"];
-	$zahl2=$_POST["zahl2"];
+	// zeilenzaehleren aus Mathe übernehmen
+	$zeilenzaehler1=$_POST["zeilenzaehler1"];
+	$zeilenzaehler2=$_POST["zeilenzaehler2"];
 		
-	// Zeichenkette in Zahlen umwandeln
-	$zahl1=intval($zahl1);
-	$zahl1=intval($zahl1);
+	// Zeichenkette in zeilenzaehleren umwandeln
+	$zeilenzaehler1=intval($zeilenzaehler1);
+	$zeilenzaehler1=intval($zeilenzaehler1);
 	
 	// Rechnung durchführen
-	$ergebnis=$zahl1+$zahl2;
+	$ergebnis=$zeilenzaehler1+$zeilenzaehler2;
 	
 	// Ergebnis ausgeben
-	echo  " $zahl1 + $zahl2 = ".$ergebnis;
+	echo  " $zeilenzaehler1 + $zeilenzaehler2 = ".$ergebnis;
 	
 	?>
 	
@@ -55,17 +55,17 @@
 	
 	*/
 
-	if($zahl1>=5)
+	if($zeilenzaehler1>=5)
 		{
 		// Rechnung durchführen
-		$ergebnis=$zahl1+$zahl2;
+		$ergebnis=$zeilenzaehler1+$zeilenzaehler2;
 	
 		// Ergebnis ausgeben
-		echo  " $zahl1 + $zahl2 = ".$ergebnis;	
+		echo  " $zeilenzaehler1 + $zeilenzaehler2 = ".$ergebnis;	
 		}
 			else
 				{
-				echo "Zahl 1 muss größer 5 sein"
+				echo "zeilenzaehler 1 muss größer 5 sein"
 		
 				}
 	//-->

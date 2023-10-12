@@ -12,7 +12,7 @@
 	$koerpergewicht=$_POST["koerpergewicht"];
 	$koerpergroesse=$_POST["koerpergroesse"];
 		
-	// Zeichenkette in Zahlen umwandeln
+	// Zeichenkette in zeilenzaehleren umwandeln
 	$koerpergewicht=intval($koerpergewicht);
 	$koerpergroesse=intval($koerpergroesse);	
 	

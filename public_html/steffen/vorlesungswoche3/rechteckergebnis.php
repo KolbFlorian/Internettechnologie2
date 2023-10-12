@@ -14,11 +14,11 @@
 	
 	<?php
 	
-	// Zahlen aus Mathe übernehmen
+	// zeilenzaehleren aus Mathe übernehmen
 	$seiteA=$_POST["seiteA"];
 	$seiteB=$_POST["seiteB"];
 		
-	// Zeichenkette in Zahlen umwandeln
+	// Zeichenkette in zeilenzaehleren umwandeln
 	$seiteA=intval($seiteA);
 	$seiteB=intval($seiteB);
 	

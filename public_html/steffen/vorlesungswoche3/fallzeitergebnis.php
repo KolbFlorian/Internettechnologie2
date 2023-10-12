@@ -14,11 +14,11 @@
 	
 	<?php
 	
-	// Zahlen aus Mathe übernehmen
+	// zeilenzaehleren aus Mathe übernehmen
 	$hoehe = $_POST["hoehe"];
 	$himmelskoerper = $_POST["himmelskoerper"];
 		
-	// Zeichenkette in Zahlen umwandeln
+	// Zeichenkette in zeilenzaehleren umwandeln
 	$hoehe = intval($hoehe);
 	$himmelskoerper = intval($himmelskoerper);
 	$erde = $himmelskoerper . "erde";

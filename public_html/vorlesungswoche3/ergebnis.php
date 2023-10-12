@@ -11,19 +11,19 @@
 	
 	<?php
 	
-	// Zahlen aus Mathe übernehmen
-	$zahl1=$_POST["zahl1"];
-	$zahl2=$_POST["zahl2"];
+	// zeilenzaehleren aus Mathe übernehmen
+	$zeilenzaehler1=$_POST["zeilenzaehler1"];
+	$zeilenzaehler2=$_POST["zeilenzaehler2"];
 		
-	// Zeichenkette in Zahlen umwandeln
-	$zahl1=intval($zahl1);
-	$zahl1=intval($zahl1);
+	// Zeichenkette in zeilenzaehleren umwandeln
+	$zeilenzaehler1=intval($zeilenzaehler1);
+	$zeilenzaehler1=intval($zeilenzaehler1);
 	
 	// Rechnung durchführen
-	$ergebnis=$zahl1+$zahl2;
+	$ergebnis=$zeilenzaehler1+$zeilenzaehler2;
 	
 	// Ergebnis ausgeben
-	echo  " $zahl1 + $zahl2 = ".$ergebnis;
+	echo  " $zeilenzaehler1 + $zeilenzaehler2 = ".$ergebnis;
 	
 	?>
 

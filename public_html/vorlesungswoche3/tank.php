@@ -22,9 +22,9 @@
         $liter = floatval($_POST["liter"]);
         $preisProLiter = floatval($_POST["preisProLiter"]);
 
-        // Sicherstellen, dass die Eingabe gültige Zahlen sind
+        // Sicherstellen, dass die Eingabe gültige zeilenzaehleren sind
         if (!is_numeric($liter) || !is_numeric($preisProLiter)) {
-            echo "<p>Bitte geben Sie gültige Zahlen ein.</p>";
+            echo "<p>Bitte geben Sie gültige zeilenzaehleren ein.</p>";
         } else {
             // Berechnung der Tankkosten
             $tankkosten = $liter * $preisProLiter;

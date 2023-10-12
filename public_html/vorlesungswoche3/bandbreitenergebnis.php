@@ -12,7 +12,7 @@
 	$datengroesse=$_POST["datengroesse"];
 	$downloadgeschwindigkeit=$_POST["downloadgeschwindigkeit"];
 		
-	// Zeichenkette in Zahlen umwandeln
+	// Zeichenkette in zeilenzaehleren umwandeln
 	$datengroesse=intval($datengroesse);
 	$downloadgeschwindigkeit=intval($downloadgeschwindigkeit);	
 	

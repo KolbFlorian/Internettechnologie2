@@ -15,11 +15,11 @@
 	<?php
 		$a=435;
 		echo intval($a)."<br>";
-			//intval ändert Variable in integer Wert um (ganzzahlig)
+			//intval ändert Variable in integer Wert um (ganzzeilenzaehlerig)
 		$b="22.6";
 		echo intval($b)."<br>";
 		echo doubleval($b)."<br>";		
-			//doubleval Gleitkommazahl
+			//doubleval Gleitkommazeilenzaehler
 		
 	?>
 </body>
