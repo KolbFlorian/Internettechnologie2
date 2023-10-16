@@ -1,5 +1,5 @@
 /* CSS Document */
-.h1 {
+h1 {
 	
 	background: #595959;
 	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
@@ -7,7 +7,7 @@
 	color: aliceblue;
 	
 }
-.body {
+body {
 	
 	background: #121212;
 }
