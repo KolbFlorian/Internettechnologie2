@@ -12,7 +12,7 @@
 	<h1>Gib hier die Daten zur Berechnung der Fallzeit ein!</h1>
 
 	
-<form action="fallzeitergebnis.php" method="post">
+<form action="../../vorlesungswoche3/fallzeitergebnis.php" method="post">
    <select name="himmelskoerper">
     	<option value="erde">Erde</option>
     	<option value="mond">Mond</option>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Fallzeit Ergebnis</title>
 	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../steffen/vorlesungswoche3/style.css">
 
 </head>
 	
