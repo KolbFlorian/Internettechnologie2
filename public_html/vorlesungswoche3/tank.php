@@ -25,15 +25,40 @@
         // Sicherstellen, dass die Eingabe gültige zeilenzaehleren sind
         if (!is_numeric($liter) || !is_numeric($preisProLiter)) {
             echo "<p>Bitte geben Sie gültige zeilenzaehleren ein.</p>";
+			
         } else {
             // Berechnung der Tankkosten
             $tankkosten = $liter * $preisProLiter;
 
             // Ergebnis ausgeben
             echo "<p>Die Tankkosten für $liter Liter bei einem Preis von $preisProLiter Euro pro Liter betragen: $tankkosten Euro</p>";
-        }
-    }
-    ?>
+			
+			//Tabelle erstellen und ausgeben
+			echo "<table border='1'>";   
+				echo "<tr>
+						<th>Liter</th>
+						<th>Preis pro Liter (in Euro)</th>
+						<th>Gesamtpreis (in Euro)</th>
+					</tr>";
+
+				// Berechnung der Tankkosten für 20 Einträge
+				for ($schleifenzaehler = $liter + 0 ; 
+					 $schleifenzaehler <= $liter + 20 ; 
+					 $schleifenzaehler ++) 
+						{
+						$tankkosten = $schleifenzaehler * $preisProLiter + $liter * $preisProLiter;
+						echo "<tr>";
+							echo "<td>$schleifenzaehler</td>";
+							echo "<td>$preisProLiter$</td>";
+							echo "<td>$tankkosten$</td>";
+						echo "</tr>";
+						}
+		        }
+		}
+    ?>	
+	
+		
+	
 	<?php
 		// Das Ergebnis wird erst angezeigt wenn das Formular gesendet wurde. Details siehe weiter unten.
 		if(isset($_POST["gesendet"]))
@@ -48,6 +73,7 @@
 			{
 				$preis=$menge*$preisProLiter; 
 				$ergebnis = "Der Preis beträgt $preis €";
+				
 
 			} else
 				{
@@ -89,11 +115,6 @@
 	
 	<p><a href="tank.php">Neue Berechnung?</a></p>
 	
-	<?php 
-			// Einbinden einer php-Datei, die Code enthält, der sonst redundant wäre.
-			include 'tankTabelle_inc.php'; 
-			include '../backLink_inc.php'; 
-	?>
 	
 </body>
 </html>
