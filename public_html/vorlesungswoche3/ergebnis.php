@@ -25,7 +25,9 @@
 	// Ergebnis ausgeben
 	echo  " $zeilenzaehler1 + $zeilenzaehler2 = ".$ergebnis;
 	
+	
 	?>
+	
 
 
 </body>

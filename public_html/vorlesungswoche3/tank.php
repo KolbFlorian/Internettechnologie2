@@ -57,31 +57,6 @@
 		}
     ?>	
 	
-		
-	
-	<?php
-		// Das Ergebnis wird erst angezeigt wenn das Formular gesendet wurde. Details siehe weiter unten.
-		if(isset($_POST["gesendet"]))
-		{
-	
-			$menge=doubleval($_POST["menge"]);
-			$preisProLiter =doubleval($_POST["kraftstoffart"]);
-			$minTankMenge=10;
-
-
-			if($menge>=$minTankMenge)
-			{
-				$preis=$menge*$preisProLiter; 
-				$ergebnis = "Der Preis beträgt $preis €";
-				
-
-			} else
-				{
-					$ergebnis = "Die Berechnung konnte nicht durchgeführt werden. Die Menge muss min".$minTankMenge."l betragen";
-				}
-		}
-		
-	?>
 	
 	<form action="tank.php" method="post">	
 		<p>
@@ -101,6 +76,56 @@
 	</form>
 	
 	<p>
+	
+		
+	
+	<?php
+		// Das Ergebnis wird erst angezeigt wenn das Formular gesendet wurde. Details siehe weiter unten.
+		if(isset($_POST["gesendet"]))
+		{
+	
+			$menge=doubleval($_POST["menge"]);
+			$preisProLiter =doubleval($_POST["kraftstoffart"]);
+			$minTankMenge=10;
+
+
+			if($menge>=$minTankMenge)
+			{
+				$preis=$menge*$preisProLiter; 
+				$ergebnis = "Der Preis beträgt $preis €";
+				
+				
+				//tabelle erstellen und anzeigen 
+				echo "<table border='1'>";   
+				echo "<tr>
+						<th>Liter</th>
+						<th>Preis pro Liter (in Euro)</th>
+						<th>Gesamtpreis (in Euro)</th>
+					</tr>";
+
+				// Berechnung der Tankkosten für 20 Einträge
+				for ($schleifenzaehler = $menge + 0 ; 
+					 $schleifenzaehler <= $menge + 20 ; 
+					 $schleifenzaehler ++) 
+						{
+						$tankkosten = $schleifenzaehler * $preisProLiter + $menge * $preisProLiter;
+						echo "<tr>";
+							echo "<td>$schleifenzaehler</td>";
+							echo "<td>$preisProLiter$</td>";
+							echo "<td>$tankkosten$</td>";
+						echo "</tr>";
+						}
+				
+
+			} else
+				{
+					$ergebnis = "Die Berechnung konnte nicht durchgeführt werden. Die Menge muss min".$minTankMenge."l betragen";
+				}
+		}
+		
+	?>
+	
+	
 		<?php 
 				/* Das Ergebnis wird erst angezeigt wenn das Formular gesendet wurde. Ebenfalls die Berechnung (Siehe oben).
 				Sonst wird die Berechnung ausgeführt, obwohl noch keine Menge erfasst oder eine Auswahl getroffen wurde.
@@ -115,6 +140,13 @@
 	
 	<p><a href="tank.php">Neue Berechnung?</a></p>
 	
+	
+	<?php  
+			// Einbinden einer php-Datei, die Code enthält, der sonst redundant wäre.
+			include 'tankTabelle_inc.php'; 
+			include '../backLink_inc.php'; 
+	?>
+
 	
 </body>
 </html>
