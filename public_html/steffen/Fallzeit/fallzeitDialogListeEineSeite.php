@@ -61,25 +61,25 @@
 					{
 						echo $ergebnis;
 					
-					echo "<table border='1'>";   
-				echo "<tr>
-						<th>Fallhöhe [m] </th>
-						<th>Falldauer [s] </th>
-					</tr>";
+				echo "<table border='1'>";   
+					echo "<tr>
+							<th>Fallhöhe [m] </th>
+							<th>Falldauer [s] </th>
+						</tr>";
 
-				// Berechnung der Tankkosten für 20 Einträge
-				for ($schleifenzaehler = $hoehe + 0 ; 
-					 $schleifenzaehler <= $hoehe + 20 ; 
-					 $schleifenzaehler ++) 
-						{
-						$zeit= (sqrt((2*$hoehe)/($fallbeschleunigung)));
-						echo "<tr>";
-							echo "<td>$schleifenzaehler</td>";
-							echo "<td>$zeit</td>";
-						echo "</tr>";
+					// Berechnung der Tankkosten für 20 Einträge
+					for ($schleifenzaehler = $hoehe + 0 ; 
+						 $schleifenzaehler <= $hoehe + 20 ; 
+						 $schleifenzaehler ++) 
+							{
+							$zeit= (sqrt((2*$hoehe)/($fallbeschleunigung)));
+							echo "<tr>";
+								echo "<td>$schleifenzaehler</td>";
+								echo "<td>$zeit</td>";
+							echo "</tr>";
+							}
+
 						}
-					
-					}
 		?>
 	</p>
 	

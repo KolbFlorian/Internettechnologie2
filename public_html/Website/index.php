@@ -16,24 +16,22 @@
 	
 	<h1>Werder Bremen</h1>
 	
-	
-<?php
-	include 'pages/include/menu_inc.php'; 
-	include 'pages/include/content_inc.php'	
-		
-?>	
-	
-	
-<?php
-	include 'pages/include/backLink_inc.php'
-?>
+	<?php
+		include 'pages/include/menu_inc.php'
+	?>
+
+	<?php
+		include 'pages/include/content_inc.php'			
+	?>	
+
+	<?php
+		include 'pages/include/backLink_inc.php'
+	?>
 	
 </body>
-	
-<foot>
-<?php
-	include 'pages/include/footer_inc.php'
-?>
-</foot>	
+
+	<?php
+		include 'pages/include/footer_inc.php'
+	?>
 	
 </html>

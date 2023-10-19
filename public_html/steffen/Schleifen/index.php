@@ -8,7 +8,7 @@
 
 <body>
 	
-	<h1>zeilen</h1>
+	<h1>For schleife 10x10 Tabelle</h1>
 	
 	<table border="1">
 	<?php
@@ -37,6 +37,8 @@
 		
 	?>
 	</table>
+	
+	
 	
 	
 </body>
