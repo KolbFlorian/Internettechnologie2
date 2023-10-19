@@ -10,6 +10,9 @@
 	<br>Florian Kolb
 	<br>Steffen Bosse
 	<br>Timon Weiß
+	<?php
+	
+	?>
 </body>
 	<footer>
 		<a href="index.php" >Zur Homepage</a>
