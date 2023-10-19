@@ -18,7 +18,10 @@
 		<a href="/bmi/bmi.php" >BMI</a>
 		<a href="/bandbreite/bandbreite.php" >Bandbreite</a>
 		<br>	<a href="pages/team.php" >Team</a>
-
+<?PHP
+	include '/pages/include/head.php';
+	
+	?>
 </body>
 	<footer>
 	</footer>
