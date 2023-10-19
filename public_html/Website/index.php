@@ -18,7 +18,9 @@
 	
 	
 <?php
+	include 'pages/include/menu_inc.php'; 
 	include 'pages/include/content_inc.php'	
+		
 ?>	
 	
 	
