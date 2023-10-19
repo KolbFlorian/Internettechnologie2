@@ -102,6 +102,7 @@
 	<?php 
 			// Einbinden einer php-Datei, die Code enthält, der sonst redundant wäre.
 			include 'fallzeitTabelle_inc.php'; 
+    
 		
 /*
 	
