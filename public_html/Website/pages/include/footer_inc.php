@@ -1,8 +1,3 @@
-<!doctype html>
-<html>
-
-
-<body>
+<foot>
 	<a href="../../index.php" >Zurück zur Homepage</a>
-</body>
-</html>
+</foot>
