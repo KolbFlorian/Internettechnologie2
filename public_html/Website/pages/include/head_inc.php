@@ -1,7 +1,6 @@
 
 <?php
 
-echo("123");
 	include('pages/team.php');
 	include('pages/menu_inc.php');
 	include('pages/head_inc.php');
