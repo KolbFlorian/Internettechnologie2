@@ -27,4 +27,11 @@
 ?>
 	
 </body>
+	
+<foot>
+<?php
+	include 'pages/include/footer_inc.php'
+?>
+</foot>	
+	
 </html>
