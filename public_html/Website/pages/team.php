@@ -15,6 +15,6 @@
 	?>
 </body>
 	<footer>
-		<a href="../../pages/index.php" >Zur Homepage</a>
+		<br> <a href="../../pages/index.php" >Zur Homepage</a>
 	</footer>
 </html>
