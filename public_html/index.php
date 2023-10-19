@@ -17,7 +17,7 @@
 		<a href="/rechteck/rechteck.php" >Rechteck</a>
 		<a href="/bmi/bmi.php" >BMI</a>
 		<a href="/bandbreite/bandbreite.php" >Bandbreite</a>
-		<br>	<a href="pages/team.php" >Team</a>
+<br>	<a href="pages/team.php" >Team</a>
 <?PHP
 	include '/pages/include/head.php';
 	
