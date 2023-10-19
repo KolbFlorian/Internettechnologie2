@@ -1,10 +1,8 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Unbenanntes Dokument</title>
-</head>
+
 
 <body>
+	<a href="../../index.php" >Zurück zur Homepage</a>
 </body>
 </html>
