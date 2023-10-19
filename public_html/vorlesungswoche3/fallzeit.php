@@ -1,27 +1,26 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Fallzeit-Aufgabe</title>
+<meta charset="UTF-8">
+<title>Berechnung des freien Falls eines Handys</title>
 </head>
-	
-	<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
-	
-	
+
 <body>
-	
-	<h1>Gib hier die Daten zur Berechnung der Fallzeit ein!</h1>
-	
-	Version 1
-	
-	<form action="fallzeitergebnis.php" method="post">
-		<p><input name="hoehe">Höhe</p>
-		<p><input name="himmelskoerper">Himmelskörper auf dem der Gegenstand fallen gelassen wird</p>
-		<p><input type="submit"></p>
-	</form>
-	
+	<h1>Berechnung des freies Falls eines Handys - Version 1</h1>
+	<form action="ergebnis.php" method="post">
 		
-	
+		<p>
+			<label for="hoehe">Höhe:</label>
+			<input id="hoehe" name="hoehe"> 
+		</p>
+		<p>
+			<label for="ort">Ort:</label> 
+			<input id="ort" name="ort">
+			Mögliche Angaben: Erde, Mond, Mars,Jupiter
+		</p>
+		
+		<p><input type="submit"</p>
+	</form>
 	
 </body>
 </html>
