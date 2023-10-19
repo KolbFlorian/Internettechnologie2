@@ -1,10 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Menü</title>
-</head>
-	<p>
+<menu>
 	<table>
 	<tr>
 	<th><a href="../team.php" >Team</a>
@@ -12,9 +6,4 @@
 		   </th></tr>
 	
 	</table>
-</p><br>
-<body>
-</body>
-<footer> 
-</footer>
-</html>
+</menu>
