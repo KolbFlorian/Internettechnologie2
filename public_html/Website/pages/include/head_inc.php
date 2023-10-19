@@ -1,6 +1,6 @@
-<<<<<<< Updated upstream
-=======
+
 <?php
+
 echo("123");
 	include('pages/team.php');
 	include('pages/menu_inc.php');
@@ -9,4 +9,4 @@ echo("123");
 	include('pages/backLink_inc.php');
 
 ?>
->>>>>>> Stashed changes
+
