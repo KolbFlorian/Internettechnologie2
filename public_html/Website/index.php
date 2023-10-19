@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Brillenschlange Kolb</title>
-	
+	<meta charset="utf-8">
+	<title>Brillenschlange Kolb</title>
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-<?php
-	include 'pages/include/head_inc.php';
-?>	
+
+	<?php
+		include 'pages/include/head_inc.php';
+	?>	
 </head>
 
 	
