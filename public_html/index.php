@@ -19,4 +19,6 @@
 		<a href="/bandbreite/bandbreite.php" >Bandbreite</a>
 	
 </body>
+	<footer>
+	</footer>
 </html>
