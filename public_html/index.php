@@ -19,7 +19,7 @@
 		<a href="/bandbreite/bandbreite.php" >Bandbreite</a>
 <br>	<a href="Website/pages/team.php" >Team</a>
 <?PHP
-	include '/Website/pages/include/head.inc';
+	include '/Website/pages/include/head_inc.php';
 	
 	?>
 </body>
