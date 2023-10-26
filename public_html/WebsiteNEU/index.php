@@ -22,7 +22,7 @@
 
 
 	<?php
-		include 'pages/inc/backLink_inc.php'
+		include 'pages/inc/backlink_inc.php'
 	?>
 	
 </body>
