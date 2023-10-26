@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Probe Website</title>
+	
 	<?php
 		include 'pages/inc/head_inc.php'
 	?>
+	
 </head>
 	
 	

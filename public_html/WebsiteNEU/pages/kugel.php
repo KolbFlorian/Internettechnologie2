@@ -4,9 +4,7 @@
 	<meta charset="utf-8">
 	<title>Kugel</title>
 	
-		<?php
-		include 'inc/head_inc.php'
-		?>
+	<link rel="stylesheet" href="../CSS/style.css">
 	
 </head>
 
@@ -53,7 +51,7 @@
 
 							echo "<tr>";
 							echo "<td>$i</td>";
-							echo "<td>" . number_format($volumen, 2) . " </td>";
+							echo "<td>" . number_format($volumen, 2) . " </td>"; //numberformat = nachkommastellen
 							echo "<td>" . number_format($oberflaeche, 2) . "</td>";
 							echo "</tr>";
 							}
