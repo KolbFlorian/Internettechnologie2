@@ -10,41 +10,52 @@
 	
 	<form method="post">
         <label for="kradius">Radius:</label>
-        <input type="text" name="kradius" id="kradius" required>
+        <input type="number" name="kradius" id="kradius" step="0.01" required>
         <br>
         <input type="submit" value="Berechnen">
     </form>
 	
 	<?php
-	
-		if ($_SERVER["REQUEST_METHOD"] == "POST") 
-			
-			{
-        	// Eingabe aus Formular verarbeiten
-			$kradius = doubleval($_POST["kradius"]);
-			
-	
+	if ($_SERVER["REQUEST_METHOD"] == "POST") 
+		{
+        
+		// Eingabe aus Formular verarbeiten
+		$kradius = doubleval($_POST["kradius"]);
+
         if ($kradius <= 0) 
-			
 			{
-            echo "<p>Bitte geben Sie einen Wert größer als 0 an</p>";
-        	} 
-			
+            echo "<p>Bitte geben Sie einen Wert größer als 0 an</p>";	
+			} 
 			else 
-				
 				{
-				// Berechnung des Volumens (V) der Kugel V = (4/3) * π * r^3
-				$kvolumen = (4/3) * M_PI * pow($kradius, 3);
+            	// Ausgabe der Ergebnisse
+            	echo "<h2>Ergebnisse für Radius von $kradius bis " . ($kradius + 20) . ":</h2>";
+				echo "<table border='1'>";
+            	echo "<tr>
+						<th>Radius</th>
+                    	<th>Volumen</th>
+                    	<th>Oberfläche</th>
+                	</tr>";
 
-				// Berechnung der Oberfläche (A) der Kugel A = 4 * π * r^2
-				$koberflaeche = 4 * M_PI * pow($kradius, 2);
+            // Schleife für die Berechnung und Ausgabe der Wertetabelle
+            for ($i = $kradius; 
+				 $i <= ($kradius + 20);
+				 $i++) 
+				
+					{
+                	$volumen = (4/3) * M_PI * pow($i, 3); //pow= ^2 
+                	$oberflaeche = 4 * M_PI * pow($i, 2); 
 
-				// Ausgabe der Ergebnisse
-				echo "Radius: " . $kradius . "<br>";
-				echo "Volumen der Kugel: " . $kvolumen . "<br>";
-				echo "Oberfläche der Kugel: " . $koberflaeche;
-				}
-		}
-    ?>	
+					echo "<tr>";
+					echo "<td>$i</td>";
+					echo "<td>" . number_format($volumen, 2) . "</td>";
+					echo "<td>" . number_format($oberflaeche, 2) . "</td>";
+					echo "</tr>";
+					}
+
+            	echo "</table>";
+        		}
+    	}
+    ?>
 </body>
 </html>

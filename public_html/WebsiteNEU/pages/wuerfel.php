@@ -40,14 +40,11 @@
 	 Für jeden Körper ist eine Wertetabelle auszugeben. Sie entscheiden selbst, welcher Wert oder welche Werte, ausgehend von den erfassten Werten, hochgezählt werden. 
 	
 		<p><table border="1">
-			<tr>
-				<th>Seitenlänge</th><th>Volumen</th><th>Mantelfläche</th><th>Oberfläche</th>
-			</tr>
-			<td>5</td><td>125</td><td>100</td><td>250</td></tr>
-			<td>10</td><td>1000</td><td>400</td><td>600</td>
-
-			
-	</table></p>
+	<tr><th>Seitenlänge</th><th>Volumen</th><th>Mantelfläche</th><th>Oberfläche</th></tr>
+	<td>5</td><td>125</td><td>100</td><td>150</td></tr>
+	<tr><td>10</td><td>1000</td><td>400</td><td>600</td></tr>
+	<tr><td>30</td><td>27000</td><td>3600</td><td>5400</td></tr>
 	
+
 </body>
 </html>
