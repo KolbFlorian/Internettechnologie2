@@ -43,6 +43,27 @@
 				echo "Radius: " . $kradius . "<br>";
 				echo "Volumen der Kugel: " . $kvolumen . "<br>";
 				echo "Oberfläche der Kugel: " . $koberflaeche;
+				
+				// tabelle ausgeben
+				echo "<table border='1'>";   
+				echo "<tr>
+						<th>Radius</th>
+						<th>Volumen</th>
+						<th>Oberfläche</th>
+					</tr>";
+
+				// Berechnung der Tankkosten für 20 Einträge
+				for ($schleifenzaehler = $kradius + 0 ; 
+					 $schleifenzaehler <= $kradiusr + 20 ; 
+					 $schleifenzaehler ++) 
+						{
+					
+						echo "<tr>";
+							echo "<td>$schleifenzaehler</td>";
+							echo "<td>$kvolumen$</td>";
+							echo "<td>$koberflaeche$</td>";
+						echo "</tr>";
+				}
 				}
 		}
     ?>	
