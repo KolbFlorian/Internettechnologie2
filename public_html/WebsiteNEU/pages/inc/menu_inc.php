@@ -1,9 +1,9 @@
 <menu>
 	<table>
 	<tr>
-		<th><a href="../kugel.php" >Kugel</a>
-		<th><a href="../zylinder.php">Zylinder</a></th>
-		<th><a href="../wuerfel.php">Wuerfel</a></th>
+		<th><a href="../WebsiteNEU/pages/wuerfel.html" >Kugel</a>
+		<th><a href="../zylinder.html">Zylinder</a></th>
+		<th><a href="../wuerfel.html">Wuerfel</a></th>
 	</tr>
 	
 	</table>
