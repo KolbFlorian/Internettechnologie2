@@ -4,10 +4,9 @@
 	<meta charset="utf-8">
 	<title>Brillenschlange Kolb</title>
 	<?php
-		include 'pages/inc/head_inc.php';
-	?>	
+		include 'pages/inc/head_inc.php'
+	?>
 </head>
-
 	
 <body>
 	

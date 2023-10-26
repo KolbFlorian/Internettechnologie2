@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Kugel</title>
+	
+	<?php
+		include 'inc/head_inc.php'
+	?>
+	
 </head>
 
 <body>
@@ -37,21 +42,21 @@
                     	<th>Oberfläche</th>
                 	</tr>";
 
-            // Schleife für die Berechnung und Ausgabe der Wertetabelle
-            for ($i = $kradius; 
-				 $i <= ($kradius + 20);
-				 $i++) 
-				
-					{
-                	$volumen = (4/3) * M_PI * pow($i, 3); //pow= ^2 
-                	$oberflaeche = 4 * M_PI * pow($i, 2); 
+					// Schleife für die Berechnung und Ausgabe der Wertetabelle
+					for ($i = $kradius; 
+						 $i <= ($kradius + 20);
+						 $i++) 
 
-					echo "<tr>";
-					echo "<td>$i</td>";
-					echo "<td>" . number_format($volumen, 2) . " </td>";
-					echo "<td>" . number_format($oberflaeche, 2) . "</td>";
-					echo "</tr>";
-					}
+							{
+							$volumen = (4/3) * M_PI * pow($i, 3); //pow= ^2 
+							$oberflaeche = 4 * M_PI * pow($i, 2); 
+
+							echo "<tr>";
+							echo "<td>$i</td>";
+							echo "<td>" . number_format($volumen, 2) . " </td>";
+							echo "<td>" . number_format($oberflaeche, 2) . "</td>";
+							echo "</tr>";
+							}
 
             	echo "</table>";
         		}
