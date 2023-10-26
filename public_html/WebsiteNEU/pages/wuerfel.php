@@ -29,7 +29,18 @@
 	else echo("Die Seitenlänge muss größer als 0 sein")
 			
 	?>
-		<table border="1">
+	<br>
+	 Für jeden Körper ist eine Wertetabelle auszugeben. Sie entscheiden selbst, welcher Wert oder welche Werte, ausgehend von den erfassten Werten, hochgezählt werden. 
+	
+		<p><table border="1">
+			<tr>
+				<th>Seitenlänge</th><th>Volumen</th><th>Mantelfläche</th><th>Oberfläche</th>
+			</tr>
+			<td>5</td><td>125</td><td>100</td><td>0</td></tr>
+			<td>10</td><td>125</td><td>100</td><td>0</td>
+
+			
+	</table></p>
 	
 </body>
 </html>
