@@ -48,7 +48,7 @@
 
 					echo "<tr>";
 					echo "<td>$i</td>";
-					echo "<td>" . number_format($volumen, 2) . "</td>";
+					echo "<td>" . number_format($volumen, 2) . " </td>";
 					echo "<td>" . number_format($oberflaeche, 2) . "</td>";
 					echo "</tr>";
 					}
@@ -58,9 +58,9 @@
 			}
     ?>
 
-<?php
-		include 'pages/inc/backlink_inc.php'
-?>
+	<?php
+		include 'inc/backlink_inc.php'
+	?>
 	
 	
 </body>

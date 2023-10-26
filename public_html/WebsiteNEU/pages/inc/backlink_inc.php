@@ -1,1 +1,1 @@
-<p><a href="../">Zurück</a></p>
+<p><a href="../index.php">Zurück</a></p>
