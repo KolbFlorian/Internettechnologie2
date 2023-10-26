@@ -48,14 +48,20 @@
 
 					echo "<tr>";
 					echo "<td>$i</td>";
-					echo "<td>" . number_format($volumen, 2) . "</td>";
+					echo "<td>" . number_format($volumen, 2) . " </td>";
 					echo "<td>" . number_format($oberflaeche, 2) . "</td>";
 					echo "</tr>";
 					}
 
             	echo "</table>";
         		}
-    	}
+			}
     ?>
+
+	<?php
+		include 'inc/backlink_inc.php'
+	?>
+	
+	
 </body>
 </html>
