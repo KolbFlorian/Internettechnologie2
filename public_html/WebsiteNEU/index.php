@@ -18,9 +18,7 @@
 	<?php
 		include 'pages/inc/menu_inc.php'
 	?>
-	<?php
-		include 'pages/inc/backlink_inc.php'
-	?>
+	
 	<?php
 		include 'pages/inc/footer_inc.php'
 	?>
