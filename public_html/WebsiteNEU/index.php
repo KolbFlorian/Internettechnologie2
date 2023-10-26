@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>Brillenschlange Kolb</title>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<?php
 		include 'pages/inc/head_inc.php';

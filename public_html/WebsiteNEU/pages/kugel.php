@@ -55,7 +55,13 @@
 
             	echo "</table>";
         		}
-    	}
+			}
     ?>
+
+<?php
+		include 'pages/inc/backlink_inc.php'
+?>
+	
+	
 </body>
 </html>
