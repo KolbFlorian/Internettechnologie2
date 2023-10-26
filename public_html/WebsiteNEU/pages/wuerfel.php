@@ -88,7 +88,9 @@ echo "</table>";
 	<td>5</td><td>125</td><td>100</td><td>150</td></tr>
 	<tr><td>10</td><td>1000</td><td>400</td><td>600</td></tr>
 	<tr><td>30</td><td>27000</td><td>3600</td><td>5400</td></tr> -->
-	
+	<?php
+		include 'inc/backlink_inc.php'
+	?>
 
 </body>
 </html>
