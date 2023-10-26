@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Kugel</title>
+	<meta charset="utf-8">
+	<title>Kugel</title>
 	
-	<?php
+		<?php
 		include 'inc/head_inc.php'
-	?>
+		?>
 	
 </head>
 
