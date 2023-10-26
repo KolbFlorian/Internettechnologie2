@@ -1,10 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Unbenanntes Dokument</title>
-</head>
-
-<body>
-</body>
-</html>
+	 <footer>
+        &copy; 2023 Bosse, Kolb, Weiß
+    </footer>

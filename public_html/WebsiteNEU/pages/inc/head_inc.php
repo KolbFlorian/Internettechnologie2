@@ -1,10 +1,2 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Unbenanntes Dokument</title>
-</head>
-
-<body>
-</body>
-</html>
+<link rel="stylesheet" type="text/css" href="CSS/style.css"><link rel="stylesheet" type="text/css" href="CSS/style.css"><link rel="stylesheet" type="text/css" href="CSS/style.css"><link rel="stylesheet" type="text/css" href="CSS/style.css"><link rel="stylesheet" type="text/css" href="CSS/style.css"><link rel="stylesheet" type="text/css" href="CSS/style.css"><link rel="stylesheet" type="text/css" href="CSS/style.css"><link rel="stylesheet" type="text/css" href="CSS/style.css">	
+<link rel="stylesheet" type="text/css" href="css/style.css">
