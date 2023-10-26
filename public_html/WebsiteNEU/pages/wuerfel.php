@@ -43,8 +43,8 @@
 			<tr>
 				<th>Seitenlänge</th><th>Volumen</th><th>Mantelfläche</th><th>Oberfläche</th>
 			</tr>
-			<td>5</td><td>125</td><td>100</td><td>0</td></tr>
-			<td>10</td><td>1000</td><td>400</td><td>0</td>
+			<td>5</td><td>125</td><td>100</td><td>250</td></tr>
+			<td>10</td><td>1000</td><td>400</td><td>600</td>
 
 			
 	</table></p>
