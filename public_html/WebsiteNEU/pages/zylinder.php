@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Unbenanntes Dokument</title>
+<title>26.10.2023</title>
 </head>
 
 <body>
@@ -56,7 +56,7 @@ Zusammenarbeit erfolgt über GitHub
 		{
 		$zoberflaeche=2*M_PI*$zradius*($zradius+$zhoehe);
 			
-		echo  " <p><h2> Oberfläche: 2·π·$zradius·($zradius+$zhoehe) = $zoberflaeche [cm^2]</h2></p>";
+		echo  " <p><h2> Oberfläche: 2 · π · $zradius·($zradius+$zhoehe) = $zoberflaeche [cm^2]</h2></p>";
 		}
 			else
 			{
@@ -67,7 +67,7 @@ Zusammenarbeit erfolgt über GitHub
 		{
 		$zmantelflaeche=2*M_PI*$zradius*$zhoehe;
 		
-		echo  " <p><h2> Mantelfläche: 2·π·$zradius·$zhoehe = $zmantelflaeche [cm^2]</h2></p>";
+		echo  " <p><h2> Mantelfläche: 2 · π · $zradius·$zhoehe = $zmantelflaeche [cm^2]</h2></p>";
 		}
 			else
 			{
@@ -79,45 +79,55 @@ Zusammenarbeit erfolgt über GitHub
 		{
 		$zvolumen=M_PI*($zradius*$zradius)*$zhoehe;
 		
-		echo  " <p><h2> Volumen: π·$zradius·$zradius·$zhoehe) = $zvolumen [cm^3]</h2></p>";
+		echo  " <p><h2> Volumen: π · $zradius·$zradius·$zhoehe = $zvolumen [cm^3]</h2></p>";
+		
+		echo "<table border = 1>";
+		echo "<tr>
+					<th>Radius</th>
+					<th>Höhe</th>
+                    <th>Oberfläche [cm^2]</th>
+                    <th>Mantelfläche [cm^2]</th>
+					<th>Volumen [cm^3]</th>
+              </tr>";
+			
+			for ( $r = $zradius; 
+		  	$r <= ($zradius + 20);
+		  	$r++
+		  ) 
+				
+					{
+              
+                	$zoberflaeche=2*M_PI*$r*($r+$zhoehe);
+		  			$zmantelflaeche=2*M_PI*$r*$zhoehe;
+		  			$zvolumen=M_PI*($r*$r)*$zhoehe;
+					$h=$r-$zradius+$zhoehe;
+
+					echo "<tr>";
+					echo "<td>$r</td>";
+					echo "<td>$h</td>";
+					echo "<td>" . number_format($zoberflaeche, 2) . "</td>";
+					echo "<td>" . number_format($zmantelflaeche, 2) . "</td>";
+		  			echo "<td>" . number_format($zvolumen, 2) . "</td>";
+					echo "</tr>";
+					
+	  				}
+		  
+	echo "</table>";
 		}
-			else
+			
+	else
 			{
 				echo "<h1>Beide Werte müssen größer 0 sein!</h1>";
 			}
 	
+	  
 	
-	// Ergebnis ausgeben
+
+	
+	include 'inc/backlink_inc.php'
 	
 	?>
-	<!--
-
-	// Zusatz: Verzweigungen mit if
 	
-	/* Vergleichsoperatoren
-	== gleich
-	!= ungleich
-	< kleiner als
-	> größer als
-	>= größer gleich
-	<= kleiner gleich
-	
-	*/
-
-	if($zeilenzaehler1>=5)
-		{
-		// Rechnung durchführen
-		$ergebnis=$zeilenzaehler1+$zeilenzaehler2;
-	
-		// Ergebnis ausgeben
-		echo  " $zeilenzaehler1 + $zeilenzaehler2 = ".$ergebnis;	
-		}
-			else
-				{
-				echo "zeilenzaehler 1 muss größer 5 sein"
-		
-				}
-	//-->
 	
 </body>
 </html>
