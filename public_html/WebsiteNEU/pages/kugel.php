@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Kugel</title>
+	
+	<?php
+		include 'inc/head_inc.php'
+	?>
+	
 </head>
 
 <body>
