@@ -7,6 +7,13 @@
 
 <body>
 	<h1>Mathematische Berechnung eines Würfels</h1>
+	<form action="wuerfel.php" method="post">
+        <label for="sl">Seitenlänge des Würfels in cm:</label>
+        <input type="text" name="sl" id="sl" required>
+        <br>
+        
+        <input type="submit" value="Berechnen">
+    </form> <br>
 	<?php
 	//Daten aus Würfel übernehmen
 	$sl=$_POST["sl"];
