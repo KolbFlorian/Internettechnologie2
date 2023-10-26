@@ -120,12 +120,11 @@ Zusammenarbeit erfolgt über GitHub
 				echo "<h1>Beide Werte müssen größer 0 sein!</h1>";
 			}
 	
-	  
 	
-
+	?>
 	
-	include 'inc/backlink_inc.php'
-	
+	<?php
+		include 'inc/backlink_inc.php'
 	?>
 	
 	
